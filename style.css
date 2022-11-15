@@ -1,3 +1,7 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
 ul {
   list-style-type: none;
   margin: 4;
@@ -21,13 +25,16 @@ li a {
 li a:hover {
   background-color: rgb(148, 0, 0);
 }
+</style>
+</head>
+<body>
 
-ul
+<ul>
    <li><a class="active" href="index.html">HOME</a></li>
    <li><a href="keplink.html">KÉPLINK</a></li>
    <li><a href="lista.html">LISTA</a></li>
    <li><a href="tablazat.html">ÓRAREND</a></li>
-ul
+</ul>
 
 </body>
 </html>
