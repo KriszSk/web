@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style>
+style
 ul {
   list-style-type: none;
-  margin: 4;
-  padding: 6;
+  margin: 5;
+  padding: 8;
   overflow: hidden;
-  background-color: black;
+  background-color: rgba(89, 143, 1, 0.562);
 }
 
 li {
@@ -16,26 +13,183 @@ li {
 
 li a {
   display: block;
-  color: rgba(144, 255, 255, 0.726);
+  color: rgba(28, 151, 45, 0.726);
   text-align: start;
   padding: 14px 16px;
   text-decoration: none;
 }
 
 li a:hover {
-  background-color: rgb(148, 0, 0);
+  background-color: rgba(79, 114, 82, 0.562);
 }
-</style>
-</head>
-<body>
 
-<ul>
-   <li><a class="active" href="index.html">HOME</a></li>
-   <li><a href="keplink.html">KÉPLINK</a></li>
-   <li><a href="lista.html">LISTA</a></li>
-   <li><a href="tablazat.html">ÓRAREND</a></li>
-</ul>
+body {
+  background-color: rgba(0, 20, 3, 0.788);
+  text-align: justify;
+}
 
-</body>
-</html>
+.evszakok {
+  transition: 0.5s;
+  float: left;
+  margin: 1%;
+  text-align: center;
+}
 
+.evszakok img {
+  transform: scale(110%);
+  font-size: medium;
+}
+
+.evszakok:hover{    
+  border: 4px solid rgb(130, 180, 110);
+  border-radius: 5px;
+  width: 250px;
+  height: 150px;
+}
+
+.box1,
+.box2,
+.box3,
+.box4 {
+  margin: 10px;
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+  transition: .5s;
+}
+
+.box1:hover,
+.box2:hover,
+.box3:hover,
+.box4:hover {
+  transform: scale(1.1);
+}
+
+.box1 {
+  background-color: #eeff00;
+  float: left;
+  background: url(img/nyar.jpg);
+}
+
+.box2 {
+  background-color: rgb(255, 0, 0);
+  float: left;
+  background: url(img/tavasz.jpg);
+}
+
+.box3 {
+  background-color: rgb(0, 255, 255);
+  clear: left;
+  background: url(img/tel.jpg);
+}
+
+.box4 {
+  background-color: rgb(60, 255, 0);
+  clear: left;
+  background: url(img/osz.jpg);
+}
+
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(224, 235, 70, 0.1);
+}
+
+.nav li {
+  float: left;
+}
+
+.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav li a:hover:not(.active) {
+  background-color: #21521c;
+}
+
+.active {
+  background-color: rgba(0, 187, 31, 0.534);
+}
+
+h1 {
+  color: rgba(120, 180, 105, 0.658);
+}
+
+h2 {
+  color: rgb(89, 136, 46);
+}
+
+button {
+  background-color: rgb(166, 255, 0);
+  color: rgba(0, 168, 28, 0.651);
+}
+
+img {
+  border-radius: 5%;
+  border: rgba(56, 134, 73, 0.705) solid 3px;
+}
+
+input {
+  background-color: rgb(255, 255, 255);
+}
+
+a {
+  color: inherit;
+  text-decoration: darkseagreen;
+  background:
+    linear-gradient(to right, rgb(145, 255, 0), rgba(23, 197, 23, 0.582)),
+    linear-gradient(to left, rgb(29, 119, 2), rgba(11, 129, 0, 0.479));
+  background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 100%, 0 100%;
+  transition: background-size 400ms;
+  background-repeat: no-repeat;
+}
+
+a:hover,
+a:focus {
+  background-size: 0 0.1em, 100% 0.1em;
+}
+
+.kepl {
+  transition: 1s;
+}
+
+.kepl:hover {
+  transform: scale(1.02);
+}
+
+table {
+  text-align: center;
+  border: 3px solid rgba(83, 125, 141, 0.93);
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 1px dotted rgb(255, 255, 255);
+  width: 100px;
+}
+
+.foot{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+footer {
+  margin-top: 5%;
+  text-align: left;
+  padding: 5px;  
+  font-size: large;
+  font-family: fantasy;
+  background-color: hsl(120, 13%, 29%);
+  color: rgba(23, 197, 23, 0.582);
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="white">
+    <meta name="msapplication-TileColor" content="red">
+    <meta name="theme-color" content="#d04d14">
+    <link rel="stylesheet" href="style.css">
+    <title>ŰRLAP</title>
+</head>
+
+<body>
+
+    <div class="nav">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="keplink.html">KÉPLINK</a></li>
+            <li><a href="lista.html">LISTA</a></li>
+            <li><a href="tablazat.html">ÓRAREND</a></li>
+            <li><a class="active" href="urlap.html">ŰRLAP</a></li>
+            <li><a href="div.html">DIV</a></li>
+            <li><a href="evszakok.html">ÉVSZAKOK</a></li>
+        </ul>
+    </div>
+    <br>
+
+    <form name="rendeles">
+        <h1>Pizza Rendelés</h1>
+        <fieldset>
+            <legend>Személyes Adatok:</legend>
+            <p><label>Név: <input type="text" name="nev">
+                    <small>Vezetéknév Keresztnév</small></label></p>
+            <p><label>Telefon: <input type="tel" name="telefon" size="12"></label></p>
+        </fieldset>
+        <fieldset>
+            <legend>Pizza mérete</legend>
+            <p><label><input type="radio" name="meret" value="kicsi">kicsi</label></p>
+            <p><label><input type="radio" name="meret" value="kozepes">közepes</label></p>
+            <p><label><input type="radio" name="meret" value="nagy">nagy</label></p>
+        </fieldset>
+        <fieldset>
+            <legend>Feltétek</legend>
+            <p><label><input type="checkbox" name="feltet1" value="Sonka">Sonka</label></p>
+            <p><label><input type="checkbox" name="feltet2" value="Szalami">Szalámi</label></p>
+            <p><label><input type="checkbox" name="feltet3" value="Csirkemell">Csirkemell</label></p>
+            <p><label><input type="checkbox" name="feltet4" value="Felvagott">Felvágott</label></p>
+            <p><label><input type="checkbox" name="feltet5" value="Sajt">Sajt</label></p>
+            <p><label><input type="checkbox" name="feltet6" value="Gomba">Gomba</label></p>
+        </fieldset>
+        <fieldset>
+            <legend>Italok</legend>
+            <p><label><input type="checkbox" name="ital1" value="Coca-Cola">Coca Cola</label></p>
+            <p><label><input type="checkbox" name="ital2" value="Zold-le-ize">Zöld lé izé</label></p>
+            <p><label><input type="checkbox" name="ital3" value="Kave">Kávé</label></p>
+            <p><label><input type="checkbox" name="ital4" value="Tej">Tej</label></p>
+            <p><label><input type="checkbox" name="ital5" value="Fanta">Fanta</label></p>
+            <p><label><input type="checkbox" name="ital6" value="HELL">HELL</label></p>
+            <p><label><input type="checkbox" name="ital6" value="Red-Bull">Red Bull</label></p>
+        </fieldset>
+        <fieldset>
+            <legend>Végezetül</legend>
+            <p><label>Mennyiség: <input type="number" name="mennyiseg"> db</label></p>
+            <p><label>Egyéb feltételek: <textarea name="egyeb"></textarea></label></p>
+            <p><label>Kívánt szálitási idő: <input type="time" name="kiszallitas"></label></p>
+            <br>
+            <input type="reset" name="visszaallitas">
+            <input type="submit" name="kuldes">
+        </fieldset>
+    </form>
+
+    <footer>
+        <p>copyright: Simon Krisztián<br>
+            <a href="mailto:simonk@kkszki.hu">simonk@kkszki.hu</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
