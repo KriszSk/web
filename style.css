@@ -28,23 +28,6 @@ body {
   text-align: justify;
 }
 
-.evszakok {
-  transition: 0.5s;
-  float: left;
-  margin: 1%;
-  text-align: center;
-}
-
-.evszakok img {
-  transform: scale(110%);
-  font-size: medium;
-}
-
-.evszakok:hover{    
-  border: 4px solid rgb(130, 180, 110);
-  border-radius: 5px;
-  width: 250px;
-  height: 150px;
 }
 
 .box1,
