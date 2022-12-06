@@ -28,6 +28,23 @@ body {
   text-align: justify;
 }
 
+.evszakok {
+  transition: 0.5s;
+  float: left;
+  margin: 1%;
+  text-align: center;
+}
+
+.evszakok img {
+  transform: scale(110%);
+  font-size: medium;
+}
+
+.evszakok:hover{    
+  border: 4px solid rgb(130, 180, 110);
+  border-radius: 5px;
+  width: 250px;
+  height: 150px;
 }
 
 .box1,
@@ -36,9 +53,9 @@ body {
 .box4 {
   margin: 10px;
   border: 1px solid black;
-  width: 200px;
-  height: 200px;
-  transition: .5s;
+  width: 100px;
+  height: 100px;
+  transition: .7s;
 }
 
 .box1:hover,
@@ -62,13 +79,13 @@ body {
 
 .box3 {
   background-color: rgb(0, 255, 255);
-  clear: left;
+  float: left;
   background: url(img/tel.jpg);
 }
 
 .box4 {
   background-color: rgb(60, 255, 0);
-  clear: left;
+  float: left;
   background: url(img/osz.jpg);
 }
 
